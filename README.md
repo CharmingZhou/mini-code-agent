@@ -7,7 +7,7 @@
 [![Anthropic](https://img.shields.io/badge/Anthropic-Claude-orange?style=for-the-badge)](https://anthropic.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> 目标不是复刻某个产品界面，而是把 Code Agent 的关键工程机制拆开、跑通、验证，并沉淀成可迭代的实现路线。
+> 聚焦 Code Agent 的关键工程机制：把核心能力拆开、跑通、验证，并沉淀成可迭代的实现路线。
 
 </div>
 
