@@ -1,0 +1,233 @@
+<svg width="1280" height="820" viewBox="0 0 1280 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1280" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFBF2"/>
+      <stop offset="1" stop-color="#F4EFE4"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FB923C"/>
+      <stop offset="1" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#86EFAC"/>
+      <stop offset="1" stop-color="#16A34A"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C084FC"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#7C2D12" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2L10 6L2 10" stroke="#A34A24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2L10 6L2 10" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .title { font: 900 42px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #D9480F; letter-spacing: 1px; }
+      .subtitle { font: 600 16px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #6B4E35; }
+      .layerTitle { font: 800 15px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2F241A; letter-spacing: .2px; }
+      .cardTitle { font: 800 12.5px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #2F241A; }
+      .cardText { font: 600 10px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #5C4B3D; }
+      .tiny { font: 700 10px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #7C2D12; }
+      .note { font: 700 11px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .mono { font: 700 9.5px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: #0F766E; }
+      .layer { fill: rgba(255,255,255,.45); stroke: #BFA58B; stroke-width: 1.4; stroke-dasharray: 6 5; }
+      .card { fill: #FFFDF8; stroke: #9A6B49; stroke-width: 1.5; }
+      .center { fill: #FFF7ED; stroke: #C2410C; stroke-width: 3; }
+      .flow { stroke: #A34A24; stroke-width: 2.3; fill: none; marker-end: url(#arrow); }
+      .softFlow { stroke: #64748B; stroke-width: 1.8; fill: none; stroke-dasharray: 5 5; marker-end: url(#arrowSoft); }
+    </style>
+  </defs>
+
+  <rect width="1280" height="820" fill="#111827"/>
+  <rect x="28" y="28" width="1224" height="764" rx="8" fill="url(#paper)"/>
+  <circle cx="1170" cy="720" r="18" fill="#FFFFFF" opacity="0.55"/>
+  <path d="M1170 682L1176 714L1208 720L1176 726L1170 758L1164 726L1132 720L1164 714L1170 682Z" fill="#FFFFFF" opacity="0.7"/>
+
+  <text x="640" y="88" text-anchor="middle" class="title">MINI CODE AGENT ARCHITECTURE</text>
+  <text x="640" y="116" text-anchor="middle" class="subtitle">从最小 Agent loop 出发，逐步叠加工具、上下文、权限、协作、观测与集成能力</text>
+
+  <!-- Layers -->
+  <rect x="60" y="150" width="320" height="260" rx="14" class="layer"/>
+  <text x="78" y="176" class="layerTitle">INPUT LAYER</text>
+
+  <rect x="410" y="150" width="390" height="198" rx="14" class="layer"/>
+  <text x="428" y="176" class="layerTitle">KNOWLEDGE LAYER</text>
+
+  <rect x="905" y="150" width="300" height="176" rx="14" class="layer"/>
+  <text x="923" y="176" class="layerTitle">INTEGRATION LAYER</text>
+
+  <rect x="760" y="408" width="340" height="178" rx="14" class="layer"/>
+  <text x="778" y="434" class="layerTitle">EXECUTION LAYER</text>
+
+  <rect x="1120" y="408" width="118" height="178" rx="14" class="layer"/>
+  <text x="1134" y="434" class="layerTitle">OUTPUT</text>
+
+  <rect x="60" y="602" width="320" height="142" rx="14" class="layer"/>
+  <text x="78" y="628" class="layerTitle">OBSERVABILITY LAYER</text>
+
+  <rect x="420" y="602" width="650" height="142" rx="14" class="layer"/>
+  <text x="438" y="628" class="layerTitle">MULTI-AGENT LAYER</text>
+
+  <!-- Input cards -->
+  <rect x="82" y="194" width="118" height="92" rx="9" class="card" filter="url(#cardShadow)"/>
+  <rect x="120" y="212" width="42" height="32" rx="4" fill="#1E293B"/>
+  <path d="M130 228H153" stroke="#67E8F9" stroke-width="3"/>
+  <path d="M128 236L136 228L128 220" stroke="#67E8F9" stroke-width="2" fill="none"/>
+  <text x="141" y="263" text-anchor="middle" class="cardTitle">User Interface</text>
+  <text x="141" y="279" text-anchor="middle" class="cardText">CLI · REPL · scripts</text>
+
+  <rect x="240" y="194" width="118" height="92" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M300 208C287 208 278 217 278 230C278 243 287 252 300 252C313 252 322 243 322 230C322 217 313 208 300 208Z" fill="url(#purple)"/>
+  <path d="M300 219V241M289 230H311" stroke="#FFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="299" y="260" text-anchor="middle" class="cardTitle">Session</text>
+  <text x="299" y="275" text-anchor="middle" class="cardTitle">Manager</text>
+  <text x="299" y="291" text-anchor="middle" class="cardText">resume · fork</text>
+
+  <rect x="160" y="320" width="122" height="70" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M222 332L242 341V354C242 367 233 374 222 379C211 374 202 367 202 354V341L222 332Z" fill="url(#orange)"/>
+  <path d="M214 355L220 361L232 347" stroke="#FFF7ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="221" y="367" text-anchor="middle" class="cardTitle" transform="translate(0 20)">Permission Gate</text>
+  <text x="221" y="382" text-anchor="middle" class="cardText" transform="translate(0 20)">deny · allow · approve</text>
+
+  <rect x="94" y="314" width="86" height="26" rx="7" fill="#EA580C" opacity=".9"/>
+  <text x="137" y="331" text-anchor="middle" fill="#FFF7ED" font-size="10" font-weight="800">YAML rules</text>
+
+  <!-- Knowledge cards -->
+  <rect x="434" y="194" width="160" height="70" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M452 214H474V250H452C448 250 446 248 446 244V220C446 216 448 214 452 214Z" fill="url(#green)"/>
+  <path d="M474 214H496C500 214 502 216 502 220V244C502 248 500 250 496 250H474V214Z" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="516" y="219" class="cardTitle">Skill</text>
+  <text x="516" y="236" class="cardTitle">Registry</text>
+  <text x="516" y="252" class="cardText">on-demand</text>
+
+  <rect x="624" y="194" width="150" height="70" rx="9" class="card" filter="url(#cardShadow)"/>
+  <rect x="640" y="212" width="40" height="38" rx="7" fill="url(#teal)"/>
+  <text x="660" y="236" text-anchor="middle" fill="#ECFEFF" font-size="17" font-weight="900">ZIP</text>
+  <text x="694" y="219" class="cardTitle">Context</text>
+  <text x="694" y="236" class="cardTitle">Compressor</text>
+  <text x="694" y="252" class="cardText">compact</text>
+
+  <rect x="434" y="286" width="160" height="44" rx="9" class="card" filter="url(#cardShadow)"/>
+  <circle cx="456" cy="308" r="9" fill="#FB923C"/><circle cx="478" cy="302" r="7" fill="#F97316"/><circle cx="478" cy="316" r="7" fill="#FDBA74"/>
+  <path d="M464 306L471 304M464 311L471 314" stroke="#7C2D12"/>
+  <text x="504" y="304" class="cardTitle">Task Graph</text>
+  <text x="504" y="320" class="cardText">dependency state</text>
+
+  <rect x="624" y="286" width="150" height="44" rx="9" class="card" filter="url(#cardShadow)"/>
+  <circle cx="648" cy="308" r="14" fill="url(#purple)"/>
+  <path d="M639 308H657M648 299V317" stroke="#FFF" stroke-width="3"/>
+  <text x="676" y="304" class="cardTitle">Memory</text>
+  <text x="676" y="319" class="cardTitle">Store</text>
+
+  <!-- Integration -->
+  <rect x="932" y="194" width="116" height="92" rx="9" class="card" filter="url(#cardShadow)"/>
+  <circle cx="990" cy="222" r="9" fill="#A855F7"/><rect x="978" y="233" width="24" height="20" rx="4" fill="#C084FC"/><path d="M990 242V256M978 249H1002" stroke="#6D28D9" stroke-width="3"/>
+  <text x="990" y="262" text-anchor="middle" class="cardTitle">MCP</text>
+  <text x="990" y="277" text-anchor="middle" class="cardTitle">Runtime</text>
+  <text x="990" y="292" text-anchor="middle" class="cardText">auto-discover</text>
+
+  <rect x="1072" y="194" width="116" height="92" rx="9" class="card" filter="url(#cardShadow)"/>
+  <rect x="1104" y="212" width="52" height="12" rx="4" fill="#64748B"/><rect x="1104" y="232" width="52" height="12" rx="4" fill="#94A3B8"/><rect x="1104" y="252" width="52" height="12" rx="4" fill="#64748B"/>
+  <text x="1130" y="276" text-anchor="middle" class="cardTitle">External</text>
+  <text x="1130" y="291" text-anchor="middle" class="cardTitle">Servers</text>
+  <text x="1130" y="306" text-anchor="middle" class="cardText">fs · git · custom</text>
+
+  <!-- Center loop -->
+  <rect x="505" y="390" width="210" height="118" rx="14" class="center" filter="url(#cardShadow)"/>
+  <path d="M610 418C630 418 646 433 646 453C646 473 630 488 610 488C592 488 577 475 574 458" stroke="#0F766E" stroke-width="8" stroke-linecap="round"/>
+  <path d="M574 458L560 463L568 447" fill="#0F766E"/>
+  <path d="M610 488C590 488 574 473 574 453C574 433 590 418 610 418C628 418 643 431 646 448" stroke="#14B8A6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M646 448L660 443L652 459" fill="#14B8A6"/>
+  <text x="610" y="533" text-anchor="middle" class="cardTitle">Master Agent Loop</text>
+  <text x="610" y="552" text-anchor="middle" class="cardText">perceive → act → observe</text>
+
+  <!-- Execution -->
+  <rect x="785" y="460" width="105" height="82" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M822 480H858V504H822Z" fill="url(#orange)"/><path d="M831 492H849" stroke="#FFF7ED" stroke-width="4"/>
+  <text x="837" y="522" text-anchor="middle" class="cardTitle">Tool Dispatch</text>
+  <text x="837" y="538" text-anchor="middle" class="cardText">typed registry</text>
+  <text x="837" y="552" text-anchor="middle" class="mono">bash read write</text>
+
+  <rect x="915" y="460" width="105" height="82" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M970 472L949 500H965L959 520L986 487H970L970 472Z" fill="#0284C7"/>
+  <text x="968" y="528" text-anchor="middle" class="cardTitle">Streaming</text>
+  <text x="968" y="544" text-anchor="middle" class="cardText">real-time runtime</text>
+
+  <rect x="910" y="552" width="118" height="24" rx="7" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="969" y="568" text-anchor="middle" class="tiny">Prompt Cache</text>
+
+  <!-- Output -->
+  <rect x="1136" y="460" width="86" height="82" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M1160 476H1190L1204 490V528H1160V476Z" fill="#BBF7D0" stroke="#16A34A"/>
+  <path d="M1190 476V490H1204" stroke="#16A34A"/>
+  <circle cx="1192" cy="518" r="12" fill="#16A34A"/><path d="M1186 518L1191 523L1199 512" stroke="#FFF" stroke-width="3"/>
+  <text x="1179" y="558" text-anchor="middle" class="cardTitle">Task Result</text>
+  <text x="1179" y="574" text-anchor="middle" class="cardText">verified output</text>
+
+  <!-- Observability -->
+  <rect x="82" y="648" width="118" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M140 662C126 674 126 694 140 706M154 668C146 676 146 692 154 700M166 674C162 680 162 688 166 694" stroke="#D97706" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="141" y="704" text-anchor="middle" class="cardTitle" transform="translate(0 8)">Event Bus</text>
+
+  <rect x="240" y="648" width="118" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <circle cx="299" cy="678" r="20" fill="#E2E8F0" stroke="#64748B"/><path d="M299 678L311 669M299 678V660" stroke="#334155" stroke-width="3"/>
+  <text x="299" y="704" text-anchor="middle" class="cardTitle" transform="translate(0 8)">Background</text>
+
+  <!-- Multi-agent -->
+  <rect x="444" y="648" width="92" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <circle cx="490" cy="670" r="13" fill="#14B8A6"/><path d="M474 698C478 687 502 687 506 698" fill="#14B8A6"/><path d="M510 674H526M518 666V682" stroke="#0F766E" stroke-width="4"/>
+  <text x="490" y="714" text-anchor="middle" class="cardTitle">Subagent</text>
+
+  <rect x="552" y="648" width="92" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M576 666H620L612 700H568L576 666Z" fill="#C084FC"/><path d="M578 676H618M574 686H616" stroke="#6D28D9" stroke-width="3"/>
+  <text x="598" y="714" text-anchor="middle" class="cardTitle">Mailboxes</text>
+
+  <rect x="660" y="648" width="92" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <circle cx="706" cy="672" r="18" fill="#FDBA74"/><path d="M706 654V690M688 672H724" stroke="#92400E" stroke-width="3"/><circle cx="688" cy="672" r="5" fill="#FFF7ED"/><circle cx="724" cy="672" r="5" fill="#FFF7ED"/>
+  <text x="706" y="714" text-anchor="middle" class="cardTitle">FSM Protocol</text>
+
+  <rect x="768" y="648" width="92" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M814 660L830 670V692L814 702L798 692V670L814 660Z" fill="#86EFAC"/><path d="M804 682H824M814 672V692" stroke="#166534" stroke-width="3"/>
+  <text x="814" y="714" text-anchor="middle" class="cardTitle">Task Board</text>
+
+  <rect x="876" y="648" width="92" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M922 660V700M922 678C944 678 942 664 942 664M922 688C900 688 902 702 902 702" stroke="#A34A24" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="922" cy="660" r="5" fill="#A34A24"/><circle cx="942" cy="664" r="5" fill="#A34A24"/><circle cx="902" cy="702" r="5" fill="#A34A24"/>
+  <text x="922" y="714" text-anchor="middle" class="cardTitle">Worktree</text>
+
+  <rect x="984" y="648" width="66" height="72" rx="9" class="card" filter="url(#cardShadow)"/>
+  <path d="M1018 662L1034 678L1018 694L1002 678L1018 662Z" fill="#FCA5A5"/><path d="M1011 678H1025" stroke="#7F1D1D" stroke-width="4"/>
+  <text x="1017" y="714" text-anchor="middle" class="cardTitle">Merge</text>
+
+  <!-- Flows -->
+  <path d="M200 240H240" class="flow"/>
+  <path d="M299 286V320" class="flow"/>
+  <path d="M282 355H470C492 355 498 365 505 390" class="flow"/>
+  <path d="M715 450H785" class="flow"/>
+  <path d="M890 501H915" class="flow"/>
+  <path d="M1020 501H1136" class="flow"/>
+
+  <path d="M514 330V390" class="softFlow"/>
+  <path d="M698 330V390" class="softFlow"/>
+  <path d="M990 286V408" class="softFlow"/>
+  <path d="M1130 286C1130 360 1030 350 990 408" class="softFlow"/>
+  <path d="M220 602C220 536 330 510 505 482" class="softFlow"/>
+  <path d="M760 648C742 600 706 572 682 508" class="softFlow"/>
+  <path d="M610 602V548" class="softFlow"/>
+  <path d="M610 390C610 358 585 354 585 348" class="softFlow"/>
+
+  <text x="402" y="338" class="note">context</text>
+  <text x="902" y="356" class="note">register tools</text>
+  <text x="292" y="468" class="note">observes everything</text>
+  <text x="728" y="604" class="note">spawns / receives</text>
+  <rect x="1046" y="708" width="116" height="24" rx="7" fill="#FED7AA" stroke="#EA580C"/>
+  <text x="1104" y="724" text-anchor="middle" class="tiny">conflict detection</text>
+</svg>
